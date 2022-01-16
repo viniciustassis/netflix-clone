@@ -1,0 +1,81 @@
+#dialogo {
+    height: 100vh;
+    position: absolute;
+    width: 60vw;
+    z-index: 200;
+    margin: auto 20%;
+    
+    background-color: rgba(0,0,0,.80);
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 5%;
+    padding: 20px;
+}
+
+#video {
+    height: 80vh;
+    position: absolute;
+    width: 90vw;
+    z-index: 200;
+    margin: auto 5%;
+    
+    background-color: rgba(0,0,0,.80);
+    color: white;
+    border: none;
+}
+
+.video {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialogo .container {
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.dialogo .container .descricao {
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.dialogo .container .botao {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width: max-content;
+    font-size: 40px;
+    display: flex;
+    width: 10%;
+    margin-left: 90%;
+    justify-content: end;
+}
+
+.divVideo .botao {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    width: max-content;
+    font-size: 40px;
+    display: flex;
+    width: 10%;
+    margin-left: 90%;
+    justify-content: end;
+}

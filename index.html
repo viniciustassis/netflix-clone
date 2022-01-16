@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/estilo.css">
 
     <!--responsividade-->
     <link rel="stylesheet" href="style/responsive.css">
@@ -12,12 +13,12 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
 
-    <title>NETFLIX CLONE</title>
+    <title>NATUREFLIX - NETFLIX CLONE</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">NATUREFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -27,21 +28,49 @@
         </div>
     </header>
 
+    <div id="video" class="divVideo hide">
+        <button role="button" class="botao closePopup">
+            <i class="fas fa-times-circle"></i>
+        </button>
+        <video width="840" height="640" class="video" controls>
+            <source src="https://stream.mux.com/tSWrGRy7om5hyzXcjZE4OM02XdXXT3Mzd/high.mp4?token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6InQ5UHZucm9ZY0hQNjhYSmlRQnRHTEVVSkVSSXJ0UXhKIn0.eyJleHAiOjE2NDIzNzM0MTksImF1ZCI6InYiLCJzdWIiOiJ0U1dyR1J5N29tNWh5elhjalpFNE9NMDJYZFhYVDNNemQifQ.N7pKC6OOo61RFaVpaB-cY9Zamk-olHw1ukCsMAVS3pdiINs6zIIfRr-hVOq7OTDrXoeHFc1Vf8J9ZEprceSkILTTUfCUHe3SPh60BVsddzWtKWeD8Z12oIKQJpM2TQ41ZrozgTr0QWpUZXYInZrtVMKiMV0zi-5QdLYSp5oVYJ9A8ePgjNoynX1_8L-1Crj-_9_n0CFIAQ6TeEQ0pWvkLXEaxuxsUhDIH7wx8khe8CKxdNWnbkQY3ZC3ijAJ0363yGCwqAT7U7ooWWF8V5tSpKXaNQ81jrBgrokJARj4Y4duqcQZ0NXelOgLkIn9AJjaRZHbY59poI-V7SKZiTi70g" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <main>
+        <div id="dialogo" class="dialogo hide">
+            <div class="container">
+                <button role="button" class="botao closePopup">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <div class="titulo">
+                    Mais Informações
+                </div>
+                <div class="descricao">
+                    <p>A superfície do planeta Terra é 24% montanhosa; 10% da população mundial vive em terreno montanhoso. A maior parte dos grandes rios nascem em montanhas. Elas se destacam por apresentar altitudes superiores às das regiões vizinhas. As montanhas mais elevadas resultam de desdobramentos, isto é, de forças internas que provocaram enormes dobras nas rochas.</p>
+    
+                    <p>A cada 150 m de altitude acima numa montanha, a temperatura diminui cerca de 1 °C, e a radiação ultravioleta também se eleva com a altitude.</p>
+        
+                    <p>Tanto nos continentes como nos oceanos, existem montanhas de dobramentos. São as montanhas jovens ou típicas, que se formaram no período Terciário, como os Alpes, na Europa, os Andes, na América do Sul, as Montanhas Rochosas, da América do Norte, e o Himalaia, na Ásia. As montanhas mais velhas e mais baixas também são resultados de dobramentos, mas foram muito erodidas e, consequentemente, rebaixadas ao longo do tempo.</p>
+                </div>
+            </div>
+        </div>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo">HOUSE OF CARDS</h3>
-                <p class="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+                <h3 class="titulo">MONTANHAS</h3>
+                <p class="descricao">Montanha ou monte (do latim montanea, de mons, montis) é uma forma de relevo. Uma sequência de montanhas denomina-se cordilheira. Uma montanha tem imponência e altitude superiores a uma colina, embora não exista uma altitude específica única para essa diferenciação.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="assistirVideo">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="botaoMaisInformacoes">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
+
             </div>
         </div>
     </main>
@@ -49,44 +78,43 @@
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini1.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini2.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini3.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini4.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini5.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini6.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini7.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini8.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini9.png" alt="" srcset="">
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+                    <img class="box-filme" src="img/mini10.png" alt="" srcset="">
                 </div>
         </div>
     </div>
-
-
 
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="js/main.js"></script>
  
 
  
